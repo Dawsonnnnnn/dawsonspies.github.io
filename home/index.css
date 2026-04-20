@@ -22,47 +22,53 @@ body {
   justify-content: space-between;
   align-items: center;
   background: var(--secondary);
-  height: fit-content;
+  max-height: 3rem;
 }
 
 nav ul {
-    list-style: none;
+  list-style: none;
 }
 
 nav a {
-    text-decoration: none;
-    color: var(--text);
-    letter-spacing: 0.08rem;
+  text-decoration: none;
+  color: var(--text);
+  letter-spacing: 0.08rem;
 }
 
 nav ul:hover {
-    list-style: none;
+  list-style: none;
+}
+
+nav ul li {
+  align-items: center;
+  align-self: center;
 }
 
 .nav-list {
-    display: flex;
-    gap: 3.5rem;
-    margin: 0;
-    padding: 0;
-    align-items: center;
+  display: flex;
+  gap: 3.5rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
 }
 
 .nav-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 0.5rem 2rem;
-    width: stretch;
-    height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 2rem;
+  width: stretch;
+  max-height: 3rem;
+  margin: 0;
 }
 
 .nav-logo {
-    color: var(--accent);
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
-    align-items: center;
-    height: fit-content;
+  color: var(--accent);
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  align-self: center;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Intel%20One%20Mono:700|Intel%20One%20Mono:400');
@@ -75,6 +81,7 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: 'Intel One Mono';
   font-weight: 700;
+  margin: 0;
 }
 
 html {font-size: 100%;} /* 16px */
@@ -90,3 +97,7 @@ h4 {font-size: 1.777rem; /* 28.48px */}
 h5 {font-size: 1.333rem; /* 21.28px */}
 
 small {font-size: 0.750rem; /* 12px */}
+
+p {
+  margin: 0;
+}
