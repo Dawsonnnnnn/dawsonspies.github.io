@@ -428,3 +428,61 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+/* PAGE HEADER */
+.page-header {
+  text-align: center;
+  padding: 7rem 2rem 2rem;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  text-shadow: 0 0 20px rgba(106,169,255,0.3);
+}
+
+.page-header p {
+  color: var(--muted);
+}
+
+/* PROFILE LAYOUT */
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+}
+
+.profile-card {
+  background: rgba(10, 14, 25, 0.65);
+  border: 1px solid rgba(106,169,255,0.15);
+  padding: 1.5rem;
+}
+
+.profile-card.wide {
+  padding: 2rem;
+}
+
+/* labels */
+.label {
+  color: rgba(106,169,255,0.8);
+}
+
+/* SKILLS GRID */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.skill-card {
+  background: rgba(10, 14, 25, 0.6);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 1.5rem;
+  transition: 0.2s;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(106,169,255,0.4);
+  box-shadow: 0 0 20px rgba(106,169,255,0.1);
+}
